@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Indústrias Wayne</title>
-    <link rel="stylesheet" href="in-resourcers.css">
+    <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
     <header>
         <h1>Dashboard - Indústrias Wayne</h1>
+        <nav class="navbar">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Veículos</a></li>
+                <li><a href="#">Dispositivos de segurança</a></li>
+                <li><a href="#">Inventario de Equipamentos</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="card">
@@ -24,6 +37,6 @@
             <p id="activities-data">Carregando...</p>
         </section>
     </main>
-    <script src="../controller/in-resourcers.js"></script>
+    <script src="/controller/dashboard.js"></script>
 </body>
 </html>

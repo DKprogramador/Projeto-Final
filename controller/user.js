@@ -21,7 +21,7 @@ function verifyUsers(event){
     getUsers().then(jsonData => {
         const foundUser = jsonData.find(u => u.name === user && u.password === password);
         if (foundUser) {
-            window.location.href = 'in-resources.html';
+            window.location.href = 'DashBoard/dashboard.html';
         } else {
             alert('Usuário ou senha incorretos.');
         }
