@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Veichels </title>
+    <link rel="stylesheet" href="veichels.css">
+    
+
+</head>
+<body>
+    
+    <div id="header-container"></div>
+
+    <div id="teste">
+        <h1> Veichels </h1>
+    </div>
+
+    <script>
+        fetch('/view/dashboard/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error("Erro ao carregar o header:", error));
+    </script>
+    
+</body>
+</html>

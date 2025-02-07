@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Equipament Inventory </title>
+    <link rel="stylesheet" href="einventory.css">
+
+</head>
+<body>
+
+    <div id="header-container"></div>
+
+    <h1>Equipament Inventory</h1>
+
+    <script>
+        fetch('/view/dashboard/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error("Erro ao carregar o header:", error));
+    </script>
+    
+</body>
+</html>
