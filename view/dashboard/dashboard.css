@@ -2,39 +2,60 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'BatmanForever', sans-serif;
 }
 
-body {
-    background-color: #f4f4f4;
+@font-face {
+    font-family: 'BatmanForever';
+    src: url('../fonts/batman_forever/batmfa__.ttf') format('truetype');
 }
+
+body{
+    background-color: #000000;
+    color: white;
+}
+
 
 /* Estilização do Cabeçalho */
 header {
-    background-color: #333;
+    background-color: #060606;
     color: #fff;
     padding: 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
 
 /* Layout Principal */
 main {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    padding: 2rem;
+    align-items: center;
+    min-height: calc(100vh - 80px); /* 100vh menos a altura do header */
+    padding: 20px;
 }
 
 /* Estilização dos Cards */
 .card {
-    background-color: #fff;
-    border-radius: 8px;
+    background-color: #060606;
+    border-radius: 100%;
+    border: solid #ff9800;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 1rem;
-    width: 30%;
+    min-width: 200px;
+    width: 300px;
+    min-height: 200px;
+    height: 300px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out; 
 }
 
 .card h2 {
@@ -47,7 +68,7 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background: #333;
+    background: #060606;
 }
 
 .nav-list {
@@ -63,6 +84,11 @@ main {
     text-decoration: none;
     color: white;
     font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-list a:hover {
+    color: #ff9800;
 }
 
 /* Menu Mobile */
@@ -85,10 +111,19 @@ main {
         display: flex;
     }
 
+    .card {
+        max-width: 150px;
+        max-height: 150px;
+        padding: 0.8rem;
+        border-radius: 100px;
+        font-size: 12px;
+    }
+
     header {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        
     }
 
     .nav-list {

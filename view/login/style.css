@@ -2,6 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'BatmanForever', sans-serif;
+}
+
+@font-face {
+    font-family: 'BatmanForever';
+    src: url('../fonts/batman_forever/batmfa__.ttf') format('truetype');
 }
 
 body {
@@ -11,10 +17,11 @@ body {
     height: 100vh;
     background-color: #1a1a1a;
     color: white;
+    background: url(fundo.png) center/cover no-repeat fixed;
 }
 
 .login-screen{
-    background: #333;
+    background: #060606;
     padding: 20px;
     border-radius: 8px;
     text-align: center;

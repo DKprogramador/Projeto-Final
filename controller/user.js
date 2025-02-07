@@ -1,6 +1,6 @@
 async function getUsers() {
     try {
-        const response = await fetch('../controller/users.json');
+        const response = await fetch('/view/login/users.json');
         if (!response.ok) {
             throw new Error('Erro ao buscar o arquivo de usuários');
         }
@@ -21,7 +21,7 @@ function verifyUsers(event){
     getUsers().then(jsonData => {
         const foundUser = jsonData.find(u => u.name === user && u.password === password);
         if (foundUser) {
-            window.location.href = 'DashBoard/dashboard.html';
+            window.location.href = "/view/dashboard/dashboard.html";
         } else {
             alert('Usuário ou senha incorretos.');
         }
