@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>header</title>
-    <link rel="st" href="header.css">
+    
+
 
 
 </head>
@@ -64,13 +65,30 @@ header {
 
 .nav-list a {
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.501);
     font-size: 14px;
+    position: relative;
+    padding-bottom: 5px;
     transition: 0.3s;
 }
 
 .nav-list a:hover {
-    color: #ff9800;
+    color: #ffffff;
+}
+
+.nav-list a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-color: #ff9800;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-list a:hover::after {
+    width: 100%;
 }
 
 /* Menu Mobile */
@@ -138,19 +156,21 @@ header {
                 <span class="bar"></span>
             </div>
             <ul class="nav-list">
-                <li><a href="../../dashboard/dashboard.html">Start</a></li>
-                <li><a href="/view/in-resources/vehicles/veichels.html">Veichels</a></li>
-                <li><a href="/view/in-resources/s-devices/sdevices.html">Security Devices</a></li>
-                <li><a href="/view/in-resources/e-inventory/einventory.html">Equipament Inventory</a></li>
+                <li><a href="../../dashboard/dashboard.html">home</a></li>
+                <li><a href="/view/in-recources/vehicles/vehicle.html">vehicle</a></li>
+                <li><a href="/view/in-recources/s-devices/sdevices.html">Security Devices</a></li>
+                <li><a href="/view/in-recources/e-inventory/einventory.html">Equipament Inventory</a></li>
             </ul>
         </nav>
     </header>
 
-    <script> const menuToggle = document.getElementById('mobile-menu');
+    <script>
+        const menuToggle = document.getElementById('mobile-menu');
         const navList = document.querySelector('.nav-list');
-        
+
         menuToggle.addEventListener('click', () => {
             navList.classList.toggle('active');
-        }); </script>
+        });
+    </script>
 </body>
 </html>

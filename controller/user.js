@@ -23,7 +23,8 @@ function verifyUsers(event){
         if (foundUser) {
             window.location.href = "/view/dashboard/dashboard.html";
         } else {
-            alert('Usuário ou senha incorretos.');
+            const fail_login = document.querySelector('.error');
+            fail_login.textContent = 'Usuário ou senha inválidos';
         }
     }).catch(err => {
         console.log('Erro ao verificar usuários: ', err);
