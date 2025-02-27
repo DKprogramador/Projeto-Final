@@ -47,7 +47,15 @@ body{
 
 .btn{
     border-radius: 100%;
+<<<<<<< HEAD
     background-color: #0c0c0c;
+=======
+<<<<<<< HEAD
+    background-color: #060606;
+=======
+    background-color: #0c0c0c;
+>>>>>>> b34315b (Reconect Repository)
+>>>>>>> 2158b24 (Reconect Repository)
     color: #ff9800;
     cursor: pointer;
     transition: .3s;
@@ -55,12 +63,21 @@ body{
 
 .btn:hover{
     transform: scale(1.1);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 2158b24 (Reconect Repository)
     color: #0c0c0c;
     background-color: #ff9800;
 }
 
 .delete{
     background-color: red;
+<<<<<<< HEAD
+=======
+>>>>>>> b34315b (Reconect Repository)
+>>>>>>> 2158b24 (Reconect Repository)
 }
 
 .vehicle-list li{

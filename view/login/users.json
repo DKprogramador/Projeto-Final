@@ -8,6 +8,12 @@
         "role": "administrator",
         "name": "Bruce Wayne",
         "password": "147258369"
+    }
+
+    {
+        "role": "manager",
+        "name": "manager",
+        "password": "147258369"
     },
     {
         "role": "manager",
