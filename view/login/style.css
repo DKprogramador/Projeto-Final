@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'BatmanForever', sans-serif;
+}
+
+@font-face {
+    font-family: 'BatmanForever';
+    src: url('../fonts/batman_forever/batmfa__.ttf') format('truetype');
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #1a1a1a;
+    color: white;
+    background: url(fundo.png) center/cover no-repeat fixed;
+}
+
+::selection {
+    background-color: #ff9800;
+}
+
+.login-screen{
+    background: #060606;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.login-screen:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px #ff9800;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+button {
+    background: #ff9800;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.error{
+    margin-top: 2rem;
+    color: red;
+}

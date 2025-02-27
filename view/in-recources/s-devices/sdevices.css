@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10rem;
+}
+
+::selection {
+    background-color: #ff9800;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.devices{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn, .device, .quantity{
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding: 1rem;
+}
+
+.device{
+    border-radius: 0.5rem;
+}
+
+.quantity{
+    border-radius: 0.5rem;
+    width: 5rem;
+}
+
+.btn{
+    border-radius: 100%;
+    background-color: #0c0c0c;
+    color: #ff9800;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    color: #0c0c0c;
+    background-color: #ff9800;
+}
+
+.device-list li{
+    margin-top: 2rem;
+    list-style-type: none;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+}

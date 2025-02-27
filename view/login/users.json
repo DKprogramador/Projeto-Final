@@ -1,0 +1,22 @@
+[
+    {
+        "role": "administrator",
+        "name": "admin",
+        "password": "123456"
+    },
+    {
+        "role": "administrator",
+        "name": "Bruce Wayne",
+        "password": "147258369"
+    },
+    {
+        "role": "manager",
+        "name": "manager",
+        "password": "123456"
+    },
+    {
+        "role": "employee",
+        "name": "employee",
+        "password": "123456"
+    }
+]
