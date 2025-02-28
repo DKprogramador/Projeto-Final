@@ -1,120 +1,59 @@
-*{
+/* Reset default styling */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'BatmanForever', sans-serif;
 }
 
+/* Define custom font */
 @font-face {
     font-family: 'BatmanForever';
     src: url('../fonts/batman_forever/batmfa__.ttf') format('truetype');
 }
 
+/* Body Styling */
 body {
     display: flex;
     justify-content: center;
-    align-items: center;*{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: 'BatmanForever', sans-serif;
-        /* Reset padding, margin, and box-sizing. Apply custom font. */
-    }
-    
-    @font-face {
-        font-family: 'BatmanForever';
-        src: url('../fonts/batman_forever/batmfa__.ttf') format('truetype');
-        /* Define custom font. */
-    }
-    
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 100vh;
-        background-color: #1a1a1a;
-        color: white;
-        background: url(fundo.png) center/cover no-repeat fixed;
-        /* Center content and apply background image and color. */
-    }
-    
-    ::selection {
-        background-color: #ff9800;
-        /* Highlight selected text with orange. */
-    }
-    
-    .login-screen{
-        background: #060606;
-        padding: 20px;
-        border-radius: 8px;
-        text-align: center;
-        transition: 0.3s;
-        /* Style login screen with dark background and rounded corners. */
-    }
-    
-    .login-screen:hover {
-        transform: scale(1.1);
-        box-shadow: 2px 2px 2px #ff9800;
-        /* Add hover effect: scale up and orange glow. */
-    }
-    
-    input {
-        display: block;
-        width: 100%;
-        margin: 10px 0;
-        padding: 8px;
-        border: none;
-        border-radius: 4px;
-        outline: none;
-        /* Style input fields with full width and rounded corners. */
-    }
-    
-    button {
-        background: #ff9800;
-        border: none;
-        padding: 10px;
-        width: 100%;
-        cursor: pointer;
-        border-radius: 4px;
-        /* Style button with orange color, full width, and pointer cursor. */
-    }
-    
-    h2 {
-        margin-bottom: 20px;
-        /* Add space below the heading. */
-    }
-    
-    .error{
-        margin-top: 2rem;
-        color: red;
-        /* Style error message in red with spacing. */
-    }
-    
+    align-items: center;
     flex-direction: column;
     height: 100vh;
     background-color: #1a1a1a;
     color: white;
     background: url(fundo.png) center/cover no-repeat fixed;
+    /* Center content, set background, and text color */
 }
 
+.title{
+    font-size: 2rem;
+    color: #ff0000;
+    margin-bottom: 20px;
+    visibility: hidden;
+}
+
+/* Highlight text selection */
 ::selection {
     background-color: #ff9800;
 }
 
-.login-screen{
+/* Login Screen Styling */
+.login-screen {
     background: #060606;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
     transition: 0.3s;
+    /* Style login screen with dark background and rounded corners */
 }
 
 .login-screen:hover {
     transform: scale(1.1);
     box-shadow: 2px 2px 2px #ff9800;
+    /* Hover effect: scale and add orange shadow */
 }
 
+/* Input Styling */
 input {
     display: block;
     width: 100%;
@@ -123,8 +62,10 @@ input {
     border: none;
     border-radius: 4px;
     outline: none;
+    /* Style input fields with full width and rounded corners */
 }
 
+/* Button Styling */
 button {
     background: #ff9800;
     border: none;
@@ -132,13 +73,34 @@ button {
     width: 100%;
     cursor: pointer;
     border-radius: 4px;
+    /* Style button with orange color, full width, and pointer cursor */
 }
 
+/* Heading Styling */
 h2 {
     margin-bottom: 20px;
+    /* Add margin below heading */
 }
 
-.error{
+/* Error Message Styling */
+.error {
     margin-top: 2rem;
     color: red;
+    /* Style error message with red color and spacing */
+}
+
+/* Responsive Design: Mobile devices */
+@media (max-width: 768px) {
+    .login-screen {
+        width: 80%;
+        margin-top: 10px;
+        /* Adjust login screen width for smaller screens */
+    }
+    body{
+        background: #00000000;
+    }
+    .title{
+        visibility: visible;
+        text-align: center;
+    }
 }
