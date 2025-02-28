@@ -3,167 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>header</title>
+    <title>Header</title>
     
-
-
-
-</head>
-
-<style>
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'BatmanForever', sans-serif;
-}
-
-@font-face {
-    font-family: 'BatmanForever';
-    src: url('/view/fonts/batman_forever/batmfa__.ttf') format('truetype');
-}
-
-body{
-    background-color: #000000;
-    color: white;
-}
-
-
-/* Estilização do Cabeçalho */
-header {
-    background-color: #060606;
-    color: #fff;
-    padding: 1rem;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    border: 8px 9px 9px solid #ff9800;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background: #060606;
-}
-
-.nav-list {
-    list-style: none;
-    display: flex;
-}
-
-.nav-list li {
-    margin: 0 15px;
-}
-
-.nav-list a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.501);
-    font-size: 14px;
-    position: relative;
-    padding-bottom: 5px;
-    transition: 0.3s;
-}
-
-.nav-list a:hover {
-    color: #ffffff;
-}
-
-.nav-list a::after{
-    content: " ";
-    width: 0px;
-    height: 4px;
-    background-color: #ff9800;
-    position: absolute;
-    top: 20px;
-    left: 0;
-    transition: 0.3s ease-in-out;
-}
-
-.nav-list a:hover::after {
-    width: 100%;
-}
-
-/* Menu Mobile */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.bar {
-    background: white;
-    height: 4px;
-    width: 30px;
-    margin: 5px 0;
-}
-
-@media (max-width: 940px) {
-    .menu-toggle {
-        display: flex;
-    }
-
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        
-    }
-
-    .nav-list {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background: #333;
-        width: 100%;
-        text-align: center;
-    }
-
-    .nav-list.active {
-        display: flex;
-        transition: all 0.3s ease in out;
-        margin-top: 30px;
-    }
-
-    .nav-list li {
-        padding: 15px 0;
-    }
-    @media (max-width: 640px){
-        header {
-            flex-direction: column;
+    <!-- Custom Font -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'BatmanForever', sans-serif;
         }
-    }
-}
 
-</style>
+        @font-face {
+            font-family: 'BatmanForever';
+            src: url('/view/fonts/batman_forever/batmfa__.ttf') format('truetype');
+        }
 
+        body {
+            background-color: #000000;
+            color: white;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #060606;
+            color: #fff;
+            padding: 1rem;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            border: 8px 9px 9px solid #ff9800;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: #060606;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-list li {
+            margin: 0 15px;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.501);
+            font-size: 14px;
+            position: relative;
+            padding-bottom: 5px;
+            transition: 0.3s;
+        }
+
+        .nav-list a:hover {
+            color: #ffffff;
+        }
+
+        .nav-list a::after {
+            content: " ";
+            width: 0px;
+            height: 4px;
+            background-color: #ff9800;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            transition: 0.3s ease-in-out;
+        }
+
+        .nav-list a:hover::after {
+            width: 100%;
+        }
+
+        /* Mobile Menu Toggle */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .bar {
+            background: white;
+            height: 4px;
+            width: 30px;
+            margin: 5px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 940px) {
+            .menu-toggle {
+                display: flex;
+            }
+
+            header {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .nav-list {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background: #333;
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-list.active {
+                display: flex;
+                transition: all 0.3s ease-in-out;
+                margin-top: 30px;
+            }
+
+            .nav-list li {
+                padding: 15px 0;
+            }
+
+            @media (max-width: 640px) {
+                header {
+                    flex-direction: column;
+                }
+            }
+        }
+    </style>
+</head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>Dashboard - Indústrias Wayne</h1>
+        <h1>Dashboard - Wayne Industries</h1>
+
+        <!-- Navigation Menu -->
         <nav class="navbar">
+            <!-- Mobile Menu Toggle Button -->
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
+
+            <!-- Navigation Links -->
             <ul class="nav-list">
-                <li><a href="../../dashboard/dashboard.html">home</a></li>
-                <li><a href="/view/in-recources/vehicles/vehicle.html">vehicle</a></li>
+                <li><a href="../../dashboard/dashboard.html">Home</a></li>
+                <li><a href="/view/in-recources/vehicles/vehicle.html">Vehicles</a></li>
                 <li><a href="/view/in-recources/s-devices/sdevices.html">Security Devices</a></li>
-                <li><a href="/view/in-recources/e-inventory/einventory.html">Equipament Inventory</a></li>
+                <li><a href="/view/in-recources/e-inventory/einventory.html">Equipment Inventory</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Mobile Menu Toggle Script -->
     <script>
         const menuToggle = document.getElementById('mobile-menu');
         const navList = document.querySelector('.nav-list');

@@ -3,31 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Equipament Inventory </title>
+    <title> Equipment Inventory </title>
     <link rel="icon" href="/view/login/batman-icon.png">
     <link rel="stylesheet" href="einventory.css">
-
+    <!-- Link to the CSS file for the inventory page styling -->
 </head>
 <body>
 
-    <div id="header-container"></div>
+    <div id="header-container"></div> 
+    <!-- Placeholder for the header content (e.g., logo or navigation) -->
 
-    <h2>Equipament Inventory</h2> <br>
+    <h2>Equipment Inventory</h2> <br> 
+    <!-- Main heading for the page -->
+
     <div class="container">
-        <div class="equipaments">
-            <input type="text" placeholder="add equipaments" class="equipament">
+        <div class="equipments">
+            <input type="text" placeholder="add equipment" class="equipment">
+            <!-- Input for adding equipment names -->
+
             <input type="number" placeholder="10" class="quantity">
-            <button class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
-            </svg> </button>
+            <!-- Input for adding the quantity of equipment (default is 10) -->
+
+            <button class="btn"> 
+                <!-- Button to add the equipment to the list -->
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                </svg> 
+                <!-- Plus icon inside the button -->
+            </button>
         </div>
 
-          <div>
-            <ul class="equipament-list">
+        <div>
+            <ul class="equipment-list">
+                <!-- List where the added equipment will appear -->
             </ul>
+        </div>
     </div>
 
-    <script src="/model/einventory.js"></script>
-    
+    <script src="/model/einventory.js"></script> 
+    <!-- External JS file for the inventory page functionality -->
 </body>
 </html>

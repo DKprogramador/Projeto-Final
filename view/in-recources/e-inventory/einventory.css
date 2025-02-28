@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-
+/* Reset margin and padding for all elements to ensure consistent styling across different browsers */
 
 body{
     display: flex;
@@ -11,16 +11,19 @@ body{
     flex-direction: column;
     padding-top: 10rem;
 }
+/* Center content vertically and horizontally using flexbox. Add 10rem padding at the top for spacing */
 
 ::selection {
     background-color: #ff9800;
 }
+/* When the user selects text, the background color of the selection will be #ff9800 */
 
 .container{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
+/* The container uses flexbox with column direction and allows wrapping of items when they overflow */
 
 .equipments{
     display: flex;
@@ -28,22 +31,26 @@ body{
     gap: 1rem;
     flex-wrap: wrap;
 }
+/* The .equipments container also uses flexbox. Items are aligned in the center with a 1rem gap between them, and wrapping is allowed */
 
-.btn, .equipament, .quantity{
+.btn, .equipment, .quantity{
     font-size: 1rem;
     border: none;
     outline: none;
     padding: 1rem;
 }
+/* Buttons, equipment, and quantity elements share the same basic styles: 1rem padding, no border or outline, and a font size of 1rem */
 
-.equipament{
+.equipment{
     border-radius: 0.5rem;
 }
+/* The .equipment class has rounded corners with a radius of 0.5rem */
 
 .quantity{
     border-radius: 0.5rem;
     width: 5rem;
 }
+/* The .quantity class also has rounded corners and a fixed width of 5rem */
 
 .btn{
     border-radius: 100%;
@@ -52,17 +59,20 @@ body{
     cursor: pointer;
     transition: .3s;
 }
+/* The button has a circular shape (border radius of 100%), a dark background, orange text, and a smooth transition effect on hover */
 
 .btn:hover{
     transform: scale(1.1);
     color: #0c0c0c;
     background-color: #ff9800;
 }
+/* On hover, the button slightly grows in size (scale 1.1), changes text color to dark gray, and background color to orange */
 
-.equipament-list li{
+.equipment-list li{
     margin-top: 2rem;
     list-style-type: none;
     text-transform: capitalize;
     display: flex;
     justify-content: space-between;
 }
+/* Each list item in .equipment-list has a top margin of 2rem, removes the default list bullet points, capitalizes the text, and spaces out the content using flexbox */
