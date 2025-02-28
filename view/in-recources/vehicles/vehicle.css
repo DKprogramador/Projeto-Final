@@ -81,3 +81,10 @@ body{
     justify-content: space-between;
 }
 /* Each list item in .vehicle-list has a top margin of 2rem, removes the default list bullet points, capitalizes the text, and spaces out the content using flexbox */
+
+@media (max-width: 768px){
+    .vehicles{
+        flex-direction: column;
+        align-items: center;
+    }
+}
