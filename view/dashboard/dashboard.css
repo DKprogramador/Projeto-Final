@@ -124,6 +124,13 @@ main {
     transition: 0.3s;
 }
 
+#leave{
+    font-family:   'BatmanForever', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ff9800;
+}
+
 .nav-list a:hover {
     color: #ffffff;
 }
@@ -202,6 +209,13 @@ main {
 
     .nav-list li {
         padding: 15px 0;
+    }
+
+    .sair{
+        background-color: #ff9800;
+        width: 100px;
+        height: 40px;
+        border: none;
     }
 
     @media (max-width: 640px) {
